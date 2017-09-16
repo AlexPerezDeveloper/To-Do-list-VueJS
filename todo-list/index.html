@@ -25,9 +25,9 @@
 
         <ul class="list">
             <li v-for="task in taskList">
-                <input type="checkbox" value="task.checked" class="">
-                <label for="checkbox">{{ task.text }}</label>
-
+                <input type="checkbox" v-model="task.checked" class="">
+                <label v-if="task.checked === false " for="checkbox">{{task.text}}</label>
+                <label for="checkbox" v-else><s>{{task.text}}</s></label>
             </li>
         </ul>
     </div>
