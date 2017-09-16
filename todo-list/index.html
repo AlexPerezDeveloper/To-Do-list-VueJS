@@ -18,15 +18,16 @@
     <div class="container" id="todo">
         <section class="panel">
             <input type="checkbox" class="" id="mark-all">
-            <input type="text" placeholder="Things to do" autofocus class="text-input" v-model="newTask" @keyup.enter="addTask">
-            
-            <button class="btn btn-warning">Clear all</button>
+            <input type="text" placeholder="Things to do" autofocus class="text-input" id="task-input" v-model="newTask" @keyup.enter="addTask">
+
+            <button @click="clearTodoList" class="btn btn-warning">Clear all</button>
         </section>
 
         <ul class="list">
             <li v-for="task in taskList">
-                    <label for="checkbox">{{ task.text }}</label>
-                    
+                <input type="checkbox" value="task.checked" class="">
+                <label for="checkbox">{{ task.text }}</label>
+
             </li>
         </ul>
     </div>

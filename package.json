@@ -1,0 +1,24 @@
+{
+  "name": "todo-list-vue",
+  "version": "0.0.1",
+  "description": "To-do list with Vue for learning purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server ./todo-list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexPerezDeveloper/To-Do-list-VueJS.git"
+  },
+  "keywords": [],
+  "author": "AlexPerezDeveloper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexPerezDeveloper/To-Do-list-VueJS/issues"
+  },
+  "homepage": "https://github.com/AlexPerezDeveloper/To-Do-list-VueJS#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
