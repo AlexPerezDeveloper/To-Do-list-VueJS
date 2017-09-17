@@ -29,9 +29,9 @@ const vm = new Vue({
             this.taskList.splice(task);
 
         },
-        changeState: function (task) {
+        markAll: function(){
 
-            this.task()
+            this.taskList.checked(true);
 
         }
 

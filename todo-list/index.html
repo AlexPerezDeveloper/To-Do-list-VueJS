@@ -17,7 +17,7 @@
     </header>
     <div class="container" id="todo">
         <section class="panel">
-            <input type="checkbox" class="" id="mark-all" >
+            <input type="checkbox" class="" id="mark-all" @click="markAll()" >
             <input type="text" placeholder="Things to do" autofocus class="text-input" v-model="newTask" @keyup.enter="addTask">
             <button class="btn btn-warning" @click="clearAll()">Clear all</button>
         </section>
